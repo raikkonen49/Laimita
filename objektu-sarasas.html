@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Objektu-sarasas</title>
+        <link rel="stylesheet" href="css/foundation.min.css" />
+        <link rel="stylesheet" href="css/motion-ui.min.css" />
+        <link rel="stylesheet" href="css/jquery.fancybox.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/nouislider.min.css">
+        <link rel="stylesheet" href="css/lightslider.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin-ext" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=latin-ext" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="nav-block hold">
+            <div class="row">
+                <div class="small-3 columns logo">
+                    <a href="#"><img src="img/logo.png"></a>
+                </div>
+                <div class="small-7 columns nav nopadright">
+                    <ul>
+                        <li><a href="#">Paslaugos</a></li>
+                        <li><a href="#">Objektai</a></li>
+                        <li><a href="#">Ekspertai</a></li>
+                        <li><a href="#">Apie mus</a></li>
+                        <li><a href="#">Kontaktai</a></li>
+                    </ul>
+                </div>
+                <div class="small-2 columns tel-block">
+                    <div class="tel-info">
+                        Paskambinkite mums
+                        <span>+370 611 22 333</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mob-header hold">
+            <div class="row">
+                <div class="small-8 columns mob-logo">
+                    <a href="#"><img src="img/logo.png"></a>
+                </div>
+                <div class="small-4 columns trigger">
+                    <div class="hamburger hamburger--collapse">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mob-nav">
+                    <ul>
+                        <li><a href="#">Paslaugos</a></li>
+                        <li><a href="#">Objektai</a></li>
+                        <li><a href="#">Ekspertai</a></li>
+                        <li><a href="#">Apie mus</a></li>
+                        <li><a href="#">Kontaktai</a></li>
+                    </ul>
+                    <div class="small-12 columns text-center nopad mob-contacts">
+                        <a href="#">
+                            Paskambinkite mums
+                            <span>+370 611 22 333</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breads-bg" style="background:url(img/bg-img.png) no-repeat center center">
+            <div class="row">
+                <div class="small-12 columns text-center breads-title">
+                    Objektai
+                </div>
+                <div class="small-12 columns text-center breads">
+                    <ul>
+                        <li><a href="#">Pagrindinis</a></li>
+                        <li>Objektai</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row row-md">
+            <div class="small-12 medium-4 medium-push-8 large-4 large-push-8 columns nopad search-block">
+                <div class="small-12 columns text-center open-filter">
+                    <span class="btn btn-red">filtruoti objektus</span>
+                </div>
+                <div class="small-12 columns search">
+                    <div class="small-12 columns nopad text-center block-title">
+                        Detali paieška
+                    </div>
+                    <div class="small-12 columns nopad filter-block">
+                        <div class="small-12 columns nopad search-object-type">
+                            <select>
+                                <option>Objekto tipas</option>
+                            </select>
+                        </div>
+                        <div class="small-12 columns nopad filter-title">
+                            Plotas, m2
+                        </div>
+                        <div class="small-12 columns nopad search-filter">
+                            <div id="slider-1"></div>
+                        </div>
+                        <div class="small-12 columns nopad filter-object-info">
+                            <div class="small-6 columns nopadleft filter-input-left">
+                                <input type="text" placeholder="34 m2">
+                            </div>
+                            <div class="small-6 columns nopadright filter-input-right">
+                                <input type="text" placeholder="52 m2">
+                            </div>
+                        </div>
+                        <div class="small-12 columns nopad filter-title">
+                            Kambarių sk.
+                        </div>
+                        <div class="small-12 columns nopad search-filter">
+                            <div id="slider-2"></div>
+                        </div>
+                        <div class="small-12 columns nopad filter-object-info">
+                            <div class="small-6 columns nopadleft filter-input-left">
+                                <input type="text" placeholder="2">
+                            </div>
+                            <div class="small-6 columns nopadright filter-input-right">
+                                <input type="text" placeholder="5">
+                            </div>
+                        </div>
+                        <div class="small-12 columns nopad filter-title">
+                            Kaina, €
+                        </div>
+                        <div class="small-12 columns nopad search-filter">
+                            <div id="slider-3"></div>
+                        </div>
+                        <div class="small-12 columns nopad filter-object-info">
+                            <div class="small-6 columns nopadleft filter-input-left">
+                                <input type="text" placeholder="Nuo">
+                            </div>
+                            <div class="small-6 columns nopadright filter-input-right">
+                                <input type="text" placeholder="Iki">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-12 columns nopad text-center">
+                        <button class="btn btn-red filter-btn" type="button">filtruoti</button>
+                    </div>
+                </div>
+            </div>
+            <div class="small-12 medium-8 medium-pull-4 large-8 large-pull-4 columns columns nopad left-main-side">
+                <div class="small-12 columns main-objects nopad">
+                    <div class="small-12 columns nopad object-container">
+                        <a href="#" data-equalizer>
+                            <div class="small-12 medium-12 large-6 columns nopad object-info-block" style="background:url(img/r-1.png) no-repeat center center" data-equalizer-watch>
+                                <span>nuomojama</span>
+                                <div class="object-info-img-text text-center">
+                                    <span>žiūrėti plačiau</span>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-12 large-6 columns nopad "data-equalizer-watch>
+                                <div class="small-12 columns about-object">
+                                    <div class="small-12 columns nopad about-object-title">
+                                        Butas Gandrališkėse
+                                        <span>Birutės g. 15, Klaipėda</span>
+                                    </div>
+                                    <div class="small-12 columns nopad about-object-text">
+                                        Daug kas galvoja, kad Lorem Ipsum - tai vien tik atsitiktinai surinktas tekstas, bet taip nėra...
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-info nopad">
+                                    <div class="small-4 columns object-info-item object-size">
+                                        100,22 m2
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-number">
+                                        3 kambariai
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-floor">
+                                        2/6 aukštas
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-price-block nopad text-center">
+                                    <div class="small-6 columns object-price">
+                                        100000 €
+                                    </div>
+                                    <div class="small-6 columns object-price-size">
+                                        10,34 €/m²
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-12 columns nopad object-container">
+                        <a href="#" data-equalizer>
+                            <div class="small-12 medium-12 large-6 columns nopad object-info-block" style="background:url(img/r-1.png) no-repeat center center" data-equalizer-watch>
+                                <span>nuomojama</span>
+                                <div class="object-info-img-text text-center">
+                                    <span>žiūrėti plačiau</span>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-12 large-6 columns nopad "data-equalizer-watch>
+                                <div class="small-12 columns about-object">
+                                    <div class="small-12 columns nopad about-object-title">
+                                        Butas Gandrališkėse
+                                        <span>Birutės g. 15, Klaipėda</span>
+                                    </div>
+                                    <div class="small-12 columns nopad about-object-text">
+                                        Daug kas galvoja, kad Lorem Ipsum - tai vien tik atsitiktinai surinktas tekstas, bet taip nėra...
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-info nopad">
+                                    <div class="small-4 columns object-info-item object-size">
+                                        100,22 m2
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-number">
+                                        3 kambariai
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-floor">
+                                        2/6 aukštas
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-price-block nopad text-center">
+                                    <div class="small-6 columns object-price">
+                                        470 €
+                                    </div>
+                                    <div class="small-6 columns object-price-size">
+                                        10,34 €/m²
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-12 columns nopad object-container">
+                        <a href="#" data-equalizer>
+                            <div class="small-12 medium-12 large-6 columns nopad object-info-block" style="background:url(img/none-img.png) no-repeat center center" data-equalizer-watch>
+                                <span>nuomojama</span>
+                                <div class="object-info-img-text text-center">
+                                    <span>žiūrėti plačiau</span>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-12 large-6 columns nopad "data-equalizer-watch>
+                                <div class="small-12 columns about-object">
+                                    <div class="small-12 columns nopad about-object-title">
+                                        Butas Gandrališkėse
+                                        <span>Birutės g. 15, Klaipėda</span>
+                                    </div>
+                                    <div class="small-12 columns nopad about-object-text">
+                                        Daug kas galvoja, kad Lorem Ipsum - tai vien tik atsitiktinai surinktas tekstas, bet taip nėra...
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-info nopad">
+                                    <div class="small-4 columns object-info-item object-size">
+                                        100,22 m2
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-number">
+                                        3 kambariai
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-floor">
+                                        2/6 aukštas
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-price-block nopad text-center">
+                                    <div class="small-6 columns object-price">
+                                        470 €
+                                    </div>
+                                    <div class="small-6 columns object-price-size">
+                                        10,34 €/m²
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-12 columns nopad object-container">
+                        <a href="#" data-equalizer>
+                            <div class="small-12 medium-12 large-6 columns nopad object-info-block" style="background:url(img/r-1.png) no-repeat center center" data-equalizer-watch>
+                                <span>nuomojama</span>
+                                <div class="object-info-img-text text-center">
+                                    <span>žiūrėti plačiau</span>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-12 large-6 columns nopad "data-equalizer-watch>
+                                <div class="small-12 columns about-object">
+                                    <div class="small-12 columns nopad about-object-title">
+                                        Butas Gandrališkėse
+                                        <span>Birutės g. 15, Klaipėda</span>
+                                    </div>
+                                    <div class="small-12 columns nopad about-object-text">
+                                        Daug kas galvoja, kad Lorem Ipsum - tai vien tik atsitiktinai surinktas tekstas, bet taip nėra...
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-info nopad">
+                                    <div class="small-4 columns object-info-item object-size">
+                                        100,22 m2
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-number">
+                                        3 kambariai
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-floor">
+                                        2/6 aukštas
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-price-block nopad text-center">
+                                    <div class="small-6 columns object-price">
+                                        470 €
+                                    </div>
+                                    <div class="small-6 columns object-price-size">
+                                        10,34 €/m²
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-12 columns nopad object-container">
+                        <a href="#" data-equalizer>
+                            <div class="small-12 medium-12 large-6 columns nopad object-info-block" style="background:url(img/r-1.png) no-repeat center center" data-equalizer-watch>
+                                <span>nuomojama</span>
+                                <div class="object-info-img-text text-center">
+                                    <span>žiūrėti plačiau</span>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-12 large-6 columns nopad "data-equalizer-watch>
+                                <div class="small-12 columns about-object">
+                                    <div class="small-12 columns nopad about-object-title">
+                                        Butas Gandrališkėse
+                                        <span>Birutės g. 15, Klaipėda</span>
+                                    </div>
+                                    <div class="small-12 columns nopad about-object-text">
+                                        Daug kas galvoja, kad Lorem Ipsum - tai vien tik atsitiktinai surinktas tekstas, bet taip nėra...
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-info nopad">
+                                    <div class="small-4 columns object-info-item object-size">
+                                        100,22 m2
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-number">
+                                        3 kambariai
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-floor">
+                                        2/6 aukštas
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-price-block nopad text-center">
+                                    <div class="small-6 columns object-price">
+                                        470 €
+                                    </div>
+                                    <div class="small-6 columns object-price-size">
+                                        10,34 €/m²
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-12 columns nopad object-container">
+                        <a href="#" data-equalizer>
+                            <div class="small-12 medium-12 large-6 columns nopad object-info-block" style="background:url(img/r-1.png) no-repeat center center" data-equalizer-watch>
+                                <span>nuomojama</span>
+                                <div class="object-info-img-text text-center">
+                                    <span>žiūrėti plačiau</span>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-12 large-6 columns nopad "data-equalizer-watch>
+                                <div class="small-12 columns about-object">
+                                    <div class="small-12 columns nopad about-object-title">
+                                        Butas Gandrališkėse
+                                        <span>Birutės g. 15, Klaipėda</span>
+                                    </div>
+                                    <div class="small-12 columns nopad about-object-text">
+                                        Daug kas galvoja, kad Lorem Ipsum - tai vien tik atsitiktinai surinktas tekstas, bet taip nėra...
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-info nopad">
+                                    <div class="small-4 columns object-info-item object-size">
+                                        100,22 m2
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-number">
+                                        3 kambariai
+                                    </div>
+                                    <div class="small-4 columns object-info-item object-floor">
+                                        2/6 aukštas
+                                    </div>
+                                </div>
+                                <div class="small-12 columns object-price-block nopad text-center">
+                                    <div class="small-6 columns object-price">
+                                        470 €
+                                    </div>
+                                    <div class="small-6 columns object-price-size">
+                                        10,34 €/m²
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="small-12 columns pagination text-center">
+                    <ul class="page-numbers">
+                        <li>
+                            <a class="prev" href="#"></a>
+                        </li>
+                        <li>
+                            <span class="current">1</span>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                        <li>
+                            <a href="#">19</a>
+                        </li>
+                        <li>
+                            <a href="#">20</a>
+                        </li>
+                        <li>
+                            <a class="next" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="message-bg">
+            <div class="row">
+                <div class="small-12 columns section-title message-section-title text-center">
+                    Susisiekite su mumis
+                </div>
+                <div class="small-12 columns message-block">
+                    <div class="small-12 medium-6 large-6 columns nopadleft message-left-side">
+                        <input type="text" placeholder="Vardas">
+                    </div>
+                    <div class="small-12 medium-6 large-6 columns nopadright message-right-side">
+                        <input type="text" placeholder="Pavardė">
+                    </div>
+                    <div class="small-12 medium-6 large-6 columns nopadleft message-left-side">
+                        <input type="text" placeholder="Telefonas">
+                    </div>
+                    <div class="small-12 medium-6 large-6 columns nopadright message-right-side">
+                        <input type="text" placeholder="El.paštas">
+                    </div>
+                    <div class="small-12 columns nopad">
+                        <textarea placeholder="Žinutė"></textarea>
+                    </div>
+                </div>
+                <div class="small-12 columns text-center">
+                    <button class="btn btn-white" type="submit">siųsti žinutę</button>
+                </div>
+            </div>
+        </div>
+        <div class="dark-grey-bg footer">
+            <div class="row">
+                <div class="small-6 medium-3 large-4 columns footer-logo-block">
+                    <div class="small-12 columns nopad footer-logo">
+                        <img src="img/logo-w.png">
+                        <span>
+                            Daug kas galvoja, kad Lorem Ipsum - tai vien tik atsitiktinai surinktas tekstas, bet taip nėra. Jo šaknis galima Lotynų kalba parašytame kūrinyje.
+                        </span>
+                    </div>
+                </div>
+                <div class="small-6 medium-4 large-3 columns footer-contacts-block">
+                    <div class="small-12 columns nopad footer-items-title">
+                        Kontaktai
+                    </div>
+                    <div class="small-12 columns nopad footer-contacts-list">
+                        <ul>
+                            <li class="location">
+                                Gandrališkėse, Birutės g. 22, Klaipėda, 91210
+                            </li>
+                            <li class="mob-tel">+370 673 38529</li>
+                            <li class="phone">+370 46 494017</li>
+                            <li class="email">uab.gurmega@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="small-6 medium-3 large-3 columns footer-work-time-block">
+                    <div class="small-12 columns nopad footer-items-title">
+                        Darbo valandos
+                    </div>
+                    <div class="small-12 columns nopad footer-work-time">
+                        <ul>
+                            <li>Pirmadienis : 8 - 17</li>
+                            <li>Pirmadienis : 8 - 17</li>
+                            <li>Pirmadienis : 8 - 17</li>
+                            <li>Pirmadienis : 8 - 17</li>
+                            <li>Pirmadienis : 8 - 17</li>
+                            <li>Šešt - Sekm : Nedirbame </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="small-6 medium-2 large-2 columns text-right footer-nav-block">
+                    <div class="footer-nav-cont text-left">
+                        <div class="small-12 columns nopad footer-items-title">
+                            Meniu
+                        </div>
+                        <div class="small-12 nopad footer-nav">
+                            <ul>
+                                <li><a href="#">Paslaugos</a></li>
+                                <li><a href="#">Objektai</a></li>
+                                <li><a href="#">Ekspertai</a></li>
+                                <li><a href="#">Apie mus</a></li>
+                                <li><a href="#">Konsultacija</a></li>
+                                <li><a href="#">Kontaktai</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dark-grey-bg copyright-block">
+            <div class="scroll-btn hold">
+                <a href="#top"></a>
+            </div>
+            <div class="row">
+                <div class="small-6 columns copyright-text">
+                    © 2017 Laimita. Visos teisės saugomos
+                </div>
+                <div class="small-6 columns text-right copyright-text">
+                    Dizaino sprendimas <a href="#">UGAS</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <a class="fancybox" rel="fancyboxgroup" href="img/img.png"><img src="img/img.png"></a> -->
+
+        <script src="js/vendor/jquery.min.js"></script>
+        <script src="js/vendor/what-input.min.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/motion-ui.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/lightslider.js"></script>
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/nouislider.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
